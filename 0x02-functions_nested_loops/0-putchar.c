@@ -6,15 +6,7 @@
  */
 
 int main(void)
-{
-	int i = 0;
-	char chaine[] = "_putchar";
-
-	while (i < 9)
-	{
-		_putchar(chaine[i]);
-		i++;
-	}
-	_putchar('\n');
-	return (0);
+{_putchar("_putchar");
+_putchar('\n');
+return (0);
 }
