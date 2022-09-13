@@ -1,13 +1,20 @@
 #include "main.h"
 /**
-* main - print if the number is postive, zero, or negative
-*
-* Description: using the main function
-* this program prints "Programming is positive, zero, or negative
-* Return: 0
-*/
+ * main - Print "Holberton"
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-printf("_putchar\n")
-return(0)
+	int i = 0;
+	char chaine[] = "_putchar";
+
+	while (i < 9)
+	{
+		_putchar(chaine[i]);
+		i++;
+	}
+	_putchar('\n');
+	return (0);
 }
