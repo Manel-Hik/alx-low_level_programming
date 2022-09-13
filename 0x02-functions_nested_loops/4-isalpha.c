@@ -1,13 +1,11 @@
 #include "main.h"
+
 /**
- *_isalpha - checks for alphabetic characters
+ * _isalpha - Checks for Alphabetic Characters
  *
- *Description: checks for alpha
+ * @c: Alphabetic character
  *
- *Return: 1 - alphabetic character 0 - otherwise
- *
- *@c:input.
- *
+ * Return: 1 (Success) OR 0 (Failure)
  */
 
 int _isalpha(int c)
@@ -16,6 +14,5 @@ int _isalpha(int c)
 	{
 		return (1);
 	}	
-
-	return(0);
+	return (0);
 }
