@@ -1,21 +1,28 @@
 #include "main.h"
+
+
 /**
-*more_numbers - function that print all numbers from
-*0 to 14
-*
-*Return: returns nothing
-*/
+ * more_numbers - Print 10x the numbers 0-14
+ *
+ * Return: 10x the numbers 0-14
+ */
 
 void more_numbers(void)
 {
-int i, j;
-for (j = 0; j < 10; j++)
-{
-for (i = 0; i < 15; i++)
-{
-_putchar(i + '0');
-putchar('\n');
-}
-}
-putchar('\n');
+	int a, b;
+
+	for (a = 0; a < 10; a++)
+	{
+		for (b = 0; b <= 14; b++)
+		{
+			if (b > 9)
+			{
+				_putchar((b / 10) + '0');
+			}
+
+			_putchar((b % 10) + '0');
+		}
+
+		_putchar('\n');
+	}
 }
