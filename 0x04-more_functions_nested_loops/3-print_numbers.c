@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_numbers - Print numbers between 0 to 9 incl.
- *
- * Return: Void.
- */
+*print_numbers - function that print all numbers from
+*0 to 9
+*
+*Return: returns nothing
+*/
 void print_numbers(void)
 {
 int i;
