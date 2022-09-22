@@ -7,7 +7,7 @@
  * Return: string.
  */
 
-char *leet(char *c)
+char *leet(char )
 {
 	char *cp = c;
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
@@ -30,5 +30,5 @@ char *leet(char *c)
 	return (cp);
 
 }
-Footer
+
 
