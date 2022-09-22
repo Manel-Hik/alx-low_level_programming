@@ -4,6 +4,7 @@
  * *_strncat - function commute srtings
  * @dest: param pointer to a char
  * @src: param pointer to a char
+ * @n: param integer
  * Return: return value of dest
  */
 
