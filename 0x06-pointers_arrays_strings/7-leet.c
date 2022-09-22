@@ -3,32 +3,38 @@
 /**
  * *leet - check the code for Holberton School students.
  *
- * @c: pointer to char params.
+ * @str: string.
  * Return: string.
  */
 
-char *leet(char )
+char *leet(char *str)
 {
-	char *cp = c;
-	char key[] = {'A', 'E', 'O', 'T', 'L'};
-	int value[] = {4, 3, 0, 7, 1};
-	unsigned int i;
+	int i;
 
-	while (*c)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		if (str[i] == 'a' || str[i] == 'A')
 		{
-			/*32 is the difference between lower case letters and apper case letters*/
-			if (*c == key[i] || *c == key[i] + 32)
-			{
-				*c = 48 + value[i];
-			}
+			str[i] = '4';
 		}
-		c++;
+		else if (str[i] == 'e' || str[i] == 'E')
+		{
+			str[i] = '3';
+		}
+		else if (str[i] == 'o' || str[i] == 'O')
+		{
+			str[i] = '0';
+		}
+		else if (str[i] == 't' || str[i] == 'T')
+		{
+			str[i] = '7';
+		}
+		else if (str[i] == 'l' || str[i] == 'L')
+		{
+			str[i] = '1';
+		}
 	}
-
-	return (cp);
-
+	return (str);
 }
 
 
