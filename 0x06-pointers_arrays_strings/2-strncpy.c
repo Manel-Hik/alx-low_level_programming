@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mainn.h"
 
 /**
  * _strncpy - Copies a string up to @n bytes
@@ -29,4 +29,4 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 	return (dest);
-}}
+}
