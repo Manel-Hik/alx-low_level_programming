@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * *_strcat - function commute srtings
+ * *_strncat - function commute srtings
  * @dest: param pointer to a char
  * @src: param pointer to a char
  * Return: return value of dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-int length, j, n;
+	int i = 0;
+	int j = 0;
 
-length = 0;
+	while (dest[i] != '\0')
+		i++;
 
-while (dest[length] != '\0')
-{
-length++;
-}
-for (j = 0; src[j] != '\0' && j < n; j++)
-{
-dest[length] = src[j];
-length++;
-}
-dest[length] = '\0';
+	while (src[j] != '\0' && n != j)
+	{
+		*(dest + i) = src[j];
+		j++;
+		i++;
+	}
 
-return (dest);
+	*(dest + i) = '\0';
+
+	return (dest);
 }
